@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f6f5;
+  width: 100%;
+  min-width: min-content;
+}
+header {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+}
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3.75em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+}
+h5 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.25em;
+  font-weight: 400;
+  color: #272f3f;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  color: #272f3f;
+}
+/*Logo*/
+.logo {
+  width: 100%;
+  height: 100px;
+}
+svg {
+  position: absolute;
+  top: 20px;
+  margin-left: 40px;
+  bottom: 40px;
+  line-height: 75px;
+}
+/*Navigation */
+nav {
+  width: 100%;
+  height: 90px;
+  padding: 0 90px;
+  line-height: 90px;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins" sans-serif;
+  font-size: 0.72em;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.back {
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 0.68em;
+  text-transform: none;
+}
+/*Contentbereich */
+.overlay {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-color: #dc9a75;
+  z-index: -1;
+}
+.overlay h1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 920px;
+  height: 160px;
+  align-items: center;
+  text-align: center;
+  left: 450px;
+  letter-spacing: 0.5rem;
+  padding-top: 50px;
+  top: 160px;
+}
+.overlay_img {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  z-index: 1;
+}
+.card {
+  position: absolute;
+  width: 730px;
+  height: 400px;
+  left: 550px;
+  top: -230px;
+  z-index: 1;
+}
+.card-img-top {
+  width: 730px;
+  height: 510px;
+  padding-bottom: 100px;
+}
+.card-title {
+  font-family: "Playfair Display" sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  color: #272f3f;
+  padding-bottom: 40px;
+}
+.card-body {
+  font-family: "Poppins" sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  height: 150px;
+}
+#condos-a-vendre {
+  background-color: #f1ece7;
+  width: 100%;
+  height: 80vh;
+}
+#condos-a-vendre h1,
+#acces-co-proprietaires h1,
+#contact-section h1 {
+  position: absolute;
+  width: 920px;
+  text-align: center;
+  left: 500px;
+  letter-spacing: 0.1em;
+  padding-top: 50px;
+}
+#condos-a-vendre .card {
+  position: relative;
+  top: 300px;
+}
+#condos-a-vendre .card-text {
+  padding-top: 25px;
+  text-align: left;
+}
+#condos-a-vendre .courriel {
+  position: relative;
+  display: block;
+  width: 540px;
+  height: 64px;
+  left: 550px;
+  top: 200px;
+}
+#condos-a-vendre .courriel p {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: medium;
+  padding-top: 5px;
+}
+#condos-a-vendre .courriel input {
+  border: none;
+  position: relative;
+  top: -10px;
+  width: 350px;
+  height: 31px;
+  padding-left: 10px;
+}
+#condos-a-vendre .courriel button {
+  position: inherit;
+  text-align: center;
+  top: -11px;
+  width: 160px;
+  height: 31px;
+  margin-left: 25px;
+  background-color: #d09b6b;
+  color: white;
+  font-family: "Poppins" sans-serif;
+  font-size: 0.68em;
+  font-weight: 600;
+  border: #d09b6b;
+  cursor: pointer;
+}
+#acces-co-proprietaires {
+  display: flex;
+  flex-direction: column;
+  background: #e3dbd3;
+  width: 100%;
+  height: 65vh;
+}
+#acces-co-proprietaires .container,
+.container_two {
+  top: 50px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#acces-co-proprietaires .card_under {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  background: #40485a;
+  z-index: 1;
+  left: 250px;
+  top: 300px;
+}
+#acces-co-proprietaires .card_over {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  z-index: 1;
+  left: 450px;
+  top: 445px;
+}
+#acces-co-proprietaires .card_under .card-img-top {
+  width: 700px;
+  height: 500px;
+  opacity: 0.4;
+}
+#acces-co-proprietaires .card_over .card-img-top {
+  width: 650px;
+  height: 450px;
+}
+#acces-co-proprietaires .card_under p {
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 197px;
+  height: 56px;
+  position: relative;
+  top: -480px;
+  left: 350px;
+  float: right;
+  letter-spacing: 0;
+  font-size: medium;
+  padding: 3px;
+  color: black;
+}
+#acces-co-proprietaires .card-body_over {
+  position: relative;
+  width: 253px;
+  height: 210px;
+  top: 585px;
+  float: right;
+  right: 380px;
+  padding: 20px 10px 20px 10px;
+}
+.card-body_over .card-text_over {
+  font-size: 1em;
+  text-align: left;
+  font-weight: lighter;
+}
+.card-body_over_bottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 450px;
+  width: 730px;
+  height: 150px;
+  left: 500px;
+  text-align: center;
+}
+.card-title_over_bottom {
+  font-family: "Playfair Display" sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  color: #272f3f;
+  padding-bottom: 40px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+/*Varieante 2 */
+.varieante_2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65vh;
+  background-color: #e3dbd3;
+  top: 550px;
+}
+.varieante_2 h1 {
+  position: relative;
+  width: 920px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  top: 150px;
+  left: 500px;
+}
+.card_under_two {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  top: 300px;
+  z-index: 1;
+  background: #40485a;
+  float: right;
+  right: 300px;
+}
+.card_under_two .card-img-top-two {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  opacity: 0.4;
+}
+.card_over_two .card-img-top_two {
+  position: relative;
+  top: 445px;
+  width: 650px;
+  height: 350px;
+  left: 570px;
+  z-index: 1;
+}
+.card-body_over_two {
+  position: relative;
+  width: 263px;
+  height: 210px;
+  top: 200px;
+  left: 290px;
+  padding: 5px 0px 0px 5px;
+}
+.card-text_over_two {
+  font-size: 1em;
+  font-weight: lighter;
+  text-align: left;
+}
+.container_two .objekt2 {
+  position: relative;
+  width: 197px;
+  height: 56px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 0;
+  top: -350px;
+  left: -400px;
+  color: black;
+}
+.card-body_over_bottom_two {
+  position: relative;
+  width: 730px;
+  height: 150px;
+  top: 350px;
+  text-align: center;
+  left: 500px;
+}
+.card-title_over_bottom_two {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+/*Contact */
+#contact-section {
+  position: relative;
+  top: 300px;
+  background-color: #e3dbd3;
+  width: 100%;
+  height: 100vh;
+}
+#contact-section .container_three {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 640px;
+  top: 250px;
+  left: 500px;
+}
+.box {
+  position: relative;
+  width: 445px;
+  height: 150px;
+  left: 225px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-family: "Poppins" sans-serif;
+  font-size: 1.18em;
+  color: #272f3f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: medium;
+}
+.box .antworten {
+  font-family: "Poppins" sans-serif;
+  color: #272f3f;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 30px;
+  letter-spacing: 0;
+}
+/*Footerbereich */
+footer {
+  position: relative;
+  top: 300px;
+  background-color: #40485a;
+  width: 100%;
+  height: 261px;
+}
+.anschrift h2 {
+  font-family: "Playfair Display" sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.anschrift {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  top: 50px;
+  left: 250px;
+}
+.anschrift .street {
+  font-family: "Poppins" sans-serif;
+  font-size: 0.6em;
+  padding-top: 20px;
+  padding-left: 25px;
+  color: white;
+}
+.coby {
+  font-family: "Poppins" sans-serif;
+  font-weight: 100;
+  font-size: 0.5rem;
+  position: relative;
+  float: right;
+  right: 200px;
+  top: 200px;
+  color: #fff;
+}
+.messages {
+  position: relative;
+  background: transparent;
+  width: 222px;
+  height: 30px;
+  text-transform: uppercase;
+  font-family: "Poppins" sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  left: 550px;
+  top: -50px;
+  cursor: pointer;
+}
